@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- available patterns for date format -->
+	<string-array name="arr_date_format_strings">
+		<item>dd.MM.yyyy</item>
+		<item>yyyy-MM-dd</item>
+		<item>MM.dd.yyyy</item>
+		<item>dd-MM-yyyy</item>
+		<item>MM-dd-yyyy</item>
+		<item>dd.MM.</item>
+		<item>MM.dd</item>
+		<item>dd-MM</item>
+		<item>MM-dd</item>
+		<item>MMM dd, yyyy</item>
+		<item>MMM dd yyyy</item>
+		<item>dd MMM yyyy</item>
+		<item>EEEE, MMMM d</item>
+		<item>EEEE MMMM d</item>
+		<item>EEEE, MMM. d</item>
+		<item>EEEE MMM. d</item>
+		<item>EEE, MMMM d</item>
+		<item>EEE MMM. d</item>
+		<item>MMMM, EEEE d</item>
+		<item>MMMM EEEE d</item>
+		<item>MMMM, EEE d</item>
+		<item>MMMM EEE d</item>
+		<item>MMM., EEEE d</item>
+		<item>MMM. EEEE d</item>
+		<item>MMMM d</item>
+		<item>MMM. d</item>
+		<item>MMMM, EEEE d yyyy</item>
+		<item>MMMM EEEE d yyyy</item>
+		<item>MMMM, EEE d yyyy</item>
+		<item>MMMM EEE d yyyy</item>
+		<item>MMM., EEEE d yyyy</item>
+		<item>MMM. EEEE d yyyy</item>
+		<item>MMMM d yyyy</item>
+		<item>MMM. d yyyy</item>
+		<item>d MMMM</item>
+		<item>dd MMMM</item>
+		<item>d MMM</item>
+		<item>dd MMM</item>
+		<item>d.MMMM</item>
+		<item>dd.MMMM</item>
+		<item>d.MMM.</item>
+		<item>dd.MMM.</item>
+		<item>EEEE, d. MMMM</item>
+		<item>EEE, d. MMMM</item>
+		<item>EEEE, d. MMM.</item>
+		<item>EEE, d MMM.</item>
+		<item>EEEE d MMM.</item>
+		<item>EEE d MMM.</item>
+		<item>EEEE, dd.MM.</item>
+		<item>EEE, dd.MM.</item>
+		<item>EEEE, d. MMMM yyyy</item>
+		<item>EEE, d. MMMM yyyy</item>
+		<item>EEEE, dd.MM.yyyy</item>
+		<item>EEE, dd.MM.yyyy</item>
+		<item>yyyy.MM.dd EEEE</item>
+		<item>yyyy-MM-dd EEEE</item>
+		<item>MM.dd EEEE</item>
+		<item>MM-dd EEEE</item>
+		<item>yyyy.MM.dd EEE</item>
+		<item>yyyy-MM-dd EEE</item>
+		<item>MM.dd EEE</item>
+		<item>MM-dd EEE</item>
+	</string-array>
+
+</resources>

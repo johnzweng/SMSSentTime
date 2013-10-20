@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+<!--
+			<ImageView
+				android:src="@drawable/ic_launcher"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginBottom="2sp" android:layout_marginRight="30sp"  android:layout_gravity="right" />
+-->
+
+			<TextView android:id="@+id/warnDialog_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10sp"
+				android:layout_marginRight="10sp"
+				android:layout_marginBottom="10sp"
+				android:textColor="#FFFFFF"
+				android:text="Test text"
+				 />
+
+		</LinearLayout>
+
+
+		<Button android:text="@string/gosms_info_btn_Ok" android:id="@+id/gosms_info_btn_Ok"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:paddingLeft="40sp" android:paddingRight="40sp" android:layout_marginTop="10sp"></Button>
+
+	</LinearLayout>
+
+</ScrollView>

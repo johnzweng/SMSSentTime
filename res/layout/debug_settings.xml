@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<TextView 
+			android:id="@+id/dbg_textViewHeader"
+			android:layout_height="wrap_content"
+			android:text="@string/dbg_header"
+			android:layout_width="fill_parent"></TextView>
+
+		<CheckBox android:text="@string/dbg_checkbox" android:id="@+id/dbg_checkbox"
+			android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="10dp" android:layout_marginBottom="5dp"></CheckBox>
+		
+		<TextView 
+			android:id="@+id/dbg_textViewExplanation" 
+			android:text="@string/dbg_explanationtext_off"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"></TextView>
+			
+		<Button 
+			android:text="@string/dbg_btnTestlogging"
+			android:id="@+id/dbg_btnTestLogging"
+			android:layout_marginTop="30dp"
+
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ffffff"
+			android:background="@drawable/custom_button" 
+			android:textSize="15dp"
+			android:layout_gravity="center_horizontal"
+			android:enabled="false"></Button>
+						
+		<Button 
+			android:text="@string/dbg_btnDeleteLogfile" 
+			android:id="@+id/dbg_btnDeleteLogfile"
+
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ffffff"
+			android:background="@drawable/custom_button" 
+			android:textSize="15dp"
+			android:layout_gravity="center_horizontal"
+			></Button>
+
+		<Button 
+			android:text="@string/dbg_btnExit" 
+			android:id="@+id/dbg_btnExit"
+			android:layout_marginTop="30dip"
+			android:textStyle="bold" 
+
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ffffff"
+			android:background="@drawable/custom_button" 
+			android:textSize="15dp"
+			android:layout_gravity="center_horizontal"
+			></Button>
+
+	</LinearLayout>
+
+</ScrollView>

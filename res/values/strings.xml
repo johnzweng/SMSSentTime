@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- ================================= -->
+	<!-- DEFAULT (english) Strings in the App -->
+	<!-- ================================= -->
+
+
+
+	<!-- ================================ -->
+	<!-- GLOBAL -->
+	<!-- ================================ -->
+
+	<!-- App name -->
+	<string name="app_name">SMS Sent Time</string>
+
+	<!-- Display name of the Service -->
+	<string name="service_label">SMS Sent Time Fix Service</string>
+
+	<!-- SMSC String for use in sms, when smsc is unknown -->
+	<string name="g_smsc_unknown">&lt;unknown&gt;</string>
+
+
+
+	<!-- ================== -->
+	<!-- preferences -->
+	<!-- ================== -->
+
+	<!-- preference group titles -->
+	<string name="p_group_title_service">Main settings</string>
+	<string name="p_group_title_text_settings">Text settings</string>
+	<string name="p_group_title_datetime_options">Date and Time settings</string>
+	<string name="p_group_title_example_format">How it will look like:</string>
+
+
+	<!-- service enabled checkox -->
+	<string name="p_title_service_enabled">Enabled?</string>
+	<string name="p_sum_on_service_enabled">Enabled. Will add sent time to incoming SMS.</string>
+	<string name="p_sum_on_service_disabled">Disabled. No action will be performed.</string>
+
+	<!-- text preference: text to append -->
+	<string name="p_title_text_append">Text pattern</string>
+	<string name="p_dialog_title_text_append" formatted="false">Placeholders: %TIME%, %DATE% and %SMSC%</string>
+	<string name="p_sum_text_append" formatted="false">Use these placeholders: %TIME%, %DATE% and %SMSC%</string>
+	<string name="p_default_text_append" formatted="false">(sent at %TIME%)</string>
+	<!-- default date pattrn, after installation: -->
+	<string name="p_default_date_pattern" formatted="false">MMM dd yyyy</string>
+	<string name="p_toast_warnung_invalid_text_append">You did not use any placeholders!\nReally ok?</string>
+
+	<!-- Checkbox for 24h format -->
+	<!-- 24-Stundenformat -->
+	<string name="p_title_24h_format">Use 24-hour format</string>
+
+	<!-- List Preference date format: -->
+	<string name="p_title_date_format">Date format</string>
+	<!-- Timezone fix #1 -->
+	<string name="p_title_timezonefix_1">Timezone fix #1</string>
+	<string name="p_sum_timezonefix_1">Try this if sent time seems to be exactly a few hours incorrect.</string>
+
+	<!-- "format example" EditText -->
+	<string name="p_example_format_title">Example:</string>
+
+
+
+	<!-- ================================ -->
+	<!-- Main Activity -->
+	<!-- ================================ -->
+
+	<!-- Buttons -->
+	<string name="btn_info">Infos</string>
+	<string name="btn_Settings">Settings</string>
+	<string name="btn_Exit">Exit</string>
+
+
+	<!-- labels for options menu (menu button pressed) -->
+	<string name="m_preferences">Preferences</string>
+	<string name="m_quit">Exit</string>
+	<string name="m_credits">Credits</string>
+	<string name="m_DebugSettings">Debug Settings</string>
+
+	<!-- Toast messages -->
+	<string name="toast_svc_enabled">SMS Time Fix enabled!</string>
+	<string name="toast_svc_disabled">SMS Time Fix disabled!</string>
+
+
+
+	<!-- ================================ -->
+	<!-- credits dialog popup -->
+	<!-- ================================ -->
+
+	<!-- label for the button -->
+	<string name="cr_btnOk">OK</string>
+	<!-- popup title -->
+	<string name="cr_title">Credits</string>
+
+
+	<!-- ==================================== -->
+	<!-- INFO TEXT POPUP -->
+	<!-- ==================================== -->
+
+	<!-- label for the button -->
+	<string name="info_btn_Ok">OK</string>
+
+	<string name="info_title">About this application:</string>
+
+	<string name="info_head_1">What does this app?</string>
+	<string name="info_text_1">This application appends the real
+		&lt;b&gt;sent&lt;/b&gt; time to incoming SMS messages. The time gets
+		appended to the message text, the original timestamp stays untouched.
+		Optionally it\'s also possible to add the SMSC number (technical
+		stuff)
+		to the message.</string>
+
+
+	<string name="info_head_2">Note for users of \"Go SMS\"</string>
+	<string name="info_text_2">"Do not disable other apps notifications from within Go SMS! Instead disable nofications directly in the stock messaging app (otherwise no other app than Go SMS will be notified by Android about incoming SMS and therefore this app won't work). This is a feature/bug of Go SMS. To disable this behaviour change the following setting in Go SMS: \"&lt;b&gt;&lt;font color=\"#87ff7b\"&gt;Receive Settings&lt;/font&gt;&lt;/b&gt;\" > \"&lt;b&gt;&lt;font color=\"#87ff7b\"&gt;Disable other message notification&lt;/font&gt;&lt;/b&gt;\". Uncheck this option!"</string>
+
+
+	<string name="info_head_3">Background of this app</string>
+	<string name="info_text_3">Many Android devices only store the time when a SMS
+		message is received. So if you get a message while your device is
+		turned off and you receive the text later when turning on the phone,
+		you will never know when it actually was sent. Fact is that the sent
+		time is actually contained in the sms data packet from your provider.
+		So this application simply reads the sent time during receiving a
+		message and appends it to the message text in the Android SMS
+		database.
+	</string>
+
+	<string name="info_head_4">Configuration</string>
+	<string name="info_text_4">The exact wording which gets appended to the SMS
+		text is highly configurable in the settings dialog. Simply enter any
+		text you wish at the option &lt;font color=\"#87ff7b\"&gt;Text
+		pattern&lt;/font&gt;. You can use &lt;b&gt;placeholders&lt;/b&gt;
+		which will be replaced by the actual values:&lt;br/&gt;&lt;br/&gt;
+		&lt;font
+		color=\"#ff6161\"&gt;&lt;b&gt;%TIME%&lt;/b&gt;&lt;/font&gt;:
+		Will be
+		replaced by the actual sent time. You can configure if 24-hour
+		format
+		should be used or not.
+		&lt;br/&gt;&lt;br/&gt;
+		&lt;font
+		color=\"#ff6161\"&gt;&lt;b&gt;%DATE%&lt;/b&gt;&lt;/font&gt;:
+		Will be
+		replaced by the actual date when the message was sent. The
+		exact
+		format
+		can be configured at the option &lt;font
+		color=\"#87ff7b\"&gt;Date
+		format&lt;/font&gt;.
+		&lt;br/&gt;&lt;br/&gt;
+		&lt;font
+		color=\"#ff6161\"&gt;&lt;b&gt;%SMSC%&lt;/b&gt;&lt;/font&gt;:
+		This will
+		be replaced by the number of the sender\'s SMS service
+		center. This is
+		technical stuff for those who are interested.
+		&lt;br/&gt;
+		&lt;br/&gt;
+		If the hour of the sent time seems to be wrong (incorrect timezone) you can try the option &lt;font color=\"#87ff7b\"&gt;Timezone fix #1&lt;/font&gt; in the settings. This &lt;b&gt;may&lt;/b&gt; solve this problem. 
+		&lt;br/&gt;
+		&lt;br/&gt;
+		&lt;i&gt;Johannes Zweng, 05.09.2011, Austria&lt;/i&gt;&lt;br/&gt;
+		</string>
+
+
+
+	<!-- Debug settings texts: -->
+	<string name="dbg_reminderTextview">Reminder: Debug Logfile is enabled! You can disable it in the menu.</string>
+	<string name="dbg_header">Debug Settings:</string>
+	<string name="dbg_checkbox">Enable SD Debug Log</string>
+	<string name="dbg_explanationtext_on">"The app will write a logfile on the SD card! This may be useful if something doesn't work, but also may have some performance impact. Disable it again when you are finished with debugging.\n\nThe logfile can be found on the SD card:\n%s"</string>
+	<string name="dbg_explanationtext_off">Debugging is disabled. No logfile will be written.</string>
+	<string name="dbg_btnTestlogging">Test Logging</string>
+	<string name="dbg_btnDeleteLogfile">Delete Logfile</string>
+	<string name="dbg_btnExit">Back</string>
+	<string name="dbg_toastTestLogOK">Test was OK!\nWrote a test line into the logfile.</string>
+	<string name="dbg_toastTestLogNotMounted">ERROR! Your sdcard is not mounted. Is the SD card currently in use?</string>
+	<string name="dbg_toastTestLogException">ERROR! There was an error while writing to the logfile: %s</string>
+	<string name="dbg_toastDeleteFileOk">Logfile deleted successfully!</string>
+	<string name="dbg_toastDeleteFileFail">Sorry, Logfile could not be deleted!</string>
+	<string name="dbg_toastOnSMSReceived">DEBUG: SMS Sent Time detected an incoming SMS.</string>
+
+	<!-- Warn dialog for go-sms users: -->
+	<string name="gosms_info_btn_Ok">OK</string>
+	<string name="gosms_info_title">Go SMS:</string>
+	<string name="gosms_info_head_1">Note for users of \"Go SMS\":</string>
+	<string name="gosms_info_text_1">"Do not disable other apps notifications from within Go SMS!&lt;br/&gt;&lt;br/&gt;Instead disable nofications directly in the stock messaging app (otherwise no other app than Go SMS will be notified by Android about incoming SMS and therefore this app won't work). This is a feature/bug of Go SMS.&lt;br/&gt;&lt;br/&gt;To disable this behaviour change the following setting in Go SMS: \"&lt;b&gt;&lt;font color=\"#87ff7b\"&gt;Receive Settings&lt;/font&gt;&lt;/b&gt;\" > \"&lt;b&gt;&lt;font color=\"#87ff7b\"&gt;Disable other message notification&lt;/font&gt;&lt;/b&gt;\". Uncheck this option!"</string>
+</resources>

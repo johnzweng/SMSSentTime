@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- ON / OFF -->
+	<PreferenceCategory android:title="@string/p_group_title_service">
+
+		<CheckBoxPreference android:key="service_enabled"
+			android:title="@string/p_title_service_enabled" android:summaryOn="@string/p_sum_on_service_enabled"
+			android:summaryOff="@string/p_sum_on_service_disabled"
+			android:defaultValue="true" />
+
+	</PreferenceCategory>
+
+
+	<!-- MESSAGE FORMAT SETTINGS -->
+	<PreferenceCategory android:title="@string/p_group_title_text_settings">
+		<EditTextPreference android:key="text_to_append"
+			android:title="@string/p_title_text_append" android:summary="@string/p_sum_text_append"
+			android:defaultValue="@string/p_default_text_append"
+			android:dialogTitle="@string/p_dialog_title_text_append" />
+	</PreferenceCategory>
+
+
+	<!-- FORMAT DATE, TIME OPTIONS -->
+	<PreferenceCategory android:title="@string/p_group_title_datetime_options">
+		<CheckBoxPreference android:key="use_24h_format"
+			android:title="@string/p_title_24h_format" android:defaultValue="true" />
+		<ListPreference android:key="date_format"
+			android:title="@string/p_title_date_format"
+			android:defaultValue="@string/p_default_date_pattern" />
+		<CheckBoxPreference android:key="timezone_fix_no_1"
+			android:title="@string/p_title_timezonefix_1" 
+			android:summary="@string/p_sum_timezonefix_1"
+			android:defaultValue="false" />
+
+	</PreferenceCategory>
+
+	<!-- EXAMPLE -->
+	<PreferenceCategory android:title="@string/p_group_title_example_format">
+
+		<EditTextPreference android:key="example_timestamp_format"
+			android:title="@string/p_example_format_title" android:enabled="false" />
+	</PreferenceCategory>
+
+
+</PreferenceScreen>
